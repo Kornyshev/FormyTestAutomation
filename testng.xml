@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FormyProjectTests">
+    <listeners>
+
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Projects/FormyTestAutomation">
+        <classes>
+            <class name="com.kornyshev.tests.AutocompletePageTest"/>
+            <class name="com.kornyshev.tests.ButtonsPageTest"/>
+            <class name="com.kornyshev.tests.CheckboxPageTest"/>
+            <class name="com.kornyshev.tests.CompleteFormPageTest"/>
+            <class name="com.kornyshev.tests.DatepickerPageTest"/>
+            <class name="com.kornyshev.tests.DragAndDropPageTest"/>
+            <class name="com.kornyshev.tests.DropdownPageTest"/>
+            <class name="com.kornyshev.tests.EnabledAndDisabledElementsPageTest"/>
+            <class name="com.kornyshev.tests.FileUploadPageTest"/>
+            <class name="com.kornyshev.tests.KeyboardAndMousePageTest"/>
+            <class name="com.kornyshev.tests.MainPageTest"/>
+            <class name="com.kornyshev.tests.ModalPageTest"/>
+            <class name="com.kornyshev.tests.PageScrollPageTest"/>
+            <class name="com.kornyshev.tests.RadioButtonPageTest"/>
+            <class name="com.kornyshev.tests.SwitchWindowPageTest"/>
+        </classes>
+    </test>
+</suite>
