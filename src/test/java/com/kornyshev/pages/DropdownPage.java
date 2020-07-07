@@ -1,4 +1,9 @@
 package com.kornyshev.pages;
 
-public class DropdownPage {
+import org.openqa.selenium.WebDriver;
+
+public class DropdownPage extends Page {
+    public DropdownPage(WebDriver driver) {
+        super(driver);
+    }
 }

@@ -1,4 +1,9 @@
 package com.kornyshev.pages;
 
-public class ModalPage {
+import org.openqa.selenium.WebDriver;
+
+public class ModalPage extends Page {
+    public ModalPage(WebDriver driver) {
+        super(driver);
+    }
 }

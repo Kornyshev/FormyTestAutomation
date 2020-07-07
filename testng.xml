@@ -4,7 +4,8 @@
     <listeners>
 
     </listeners>
-    <test verbose="2" preserve-order="true" name="C:/Projects/FormyTestAutomation">
+    <test verbose="2" preserve-order="true" name="C:/Projects/FormyTestAutomation" >
+        <parameter name="mainUrl" value="https://formy-project.herokuapp.com/"/>
         <classes>
             <class name="com.kornyshev.tests.AutocompletePageTest"/>
             <class name="com.kornyshev.tests.ButtonsPageTest"/>
