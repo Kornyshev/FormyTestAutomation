@@ -71,7 +71,6 @@ public class CompleteFormPage extends Page {
     }
 
     public void setDatepickerField(String s) {
-        datepickerField.click();
         datepickerField.sendKeys(s);
         datepickerField.sendKeys(Keys.ENTER);
     }

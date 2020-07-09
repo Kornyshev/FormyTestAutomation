@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class FileUploadPageTest {
 
     WebDriver driver;
@@ -24,8 +26,14 @@ public class FileUploadPageTest {
     }
 
     @Test(priority = 0)
-    public void testMethod() {
+    public void testMainHeader() {
+        String expectedHeader = "File upload";
+        assertEquals(fileUploadPage.getMainHeaderText(), expectedHeader);
+    }
 
+    @Test(priority = 10)
+    public void testFileUploadField() {
+        fileUploadPage.setFileUploadField("my-random-file-name.txt");
     }
 
     @AfterClass

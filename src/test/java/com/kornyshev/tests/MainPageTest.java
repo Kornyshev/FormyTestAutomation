@@ -30,7 +30,7 @@ public class MainPageTest {
     }
 
     @Test(priority = 10)
-    public void testMethod() {
+    public void testAnotherHeader() {
         String expectedHeader = "This is a simple site that has form components that can be used for testing purposes.";
         assertEquals(mainPage.getSecondHeaderTest(), expectedHeader);
     }

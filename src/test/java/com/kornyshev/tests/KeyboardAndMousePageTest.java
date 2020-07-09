@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class KeyboardAndMousePageTest {
 
     WebDriver driver;
@@ -24,8 +26,9 @@ public class KeyboardAndMousePageTest {
     }
 
     @Test(priority = 0)
-    public void testMethod() {
-
+    public void testMainHeader() {
+        String expectedHeader = "Keyboard and Mouse Input";
+        assertEquals(keyAndMousePage.getMainHeaderText(), expectedHeader);
     }
 
     @AfterClass

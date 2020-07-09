@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class PageScrollPageTest {
 
     WebDriver driver;
@@ -24,8 +26,9 @@ public class PageScrollPageTest {
     }
 
     @Test(priority = 0)
-    public void testMethod() {
-
+    public void testMainHeader() {
+        String expectedHeader = "Large page content";
+        assertEquals(pageScrollPage.getMainHeaderText(), expectedHeader);
     }
 
     @AfterClass

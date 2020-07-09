@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class DatepickerPageTest {
 
     WebDriver driver;
@@ -24,8 +26,17 @@ public class DatepickerPageTest {
     }
 
     @Test(priority = 0)
-    public void testMethod() {
+    public void testMainHeader() {
+        String expectedHeader = "Datepicker";
+        assertEquals(datepickerPage.getMainHeaderText(), expectedHeader);
+    }
 
+    @Test(priority = 10)
+    public void testDatepicker() {
+        datepickerPage.setDatepickerField("07/09/2020");
+        /*
+        There is nothing to test...
+         */
     }
 
     @AfterClass

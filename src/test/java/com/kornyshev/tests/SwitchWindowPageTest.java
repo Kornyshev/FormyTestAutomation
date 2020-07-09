@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class SwitchWindowPageTest {
 
     WebDriver driver;
@@ -24,8 +26,9 @@ public class SwitchWindowPageTest {
     }
 
     @Test(priority = 0)
-    public void testMethod() {
-
+    public void testMainHeader() {
+        String expectedHeader = "Switch Window";
+        assertEquals(switchWindowPage.getMainHeaderText(), expectedHeader);
     }
 
     @AfterClass
